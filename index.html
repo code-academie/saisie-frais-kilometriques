@@ -1,42 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" type="text/css" href="./style.css" />
-	<title>Velo cash</title>
-</head>
-
-<body>
-	<div class="corps1">
-		<!--
-        <img src="https://cdn.pixabay.com/photo/2014/12/04/19/45/bicycle-557046_1280.jpg">
-      -->
-		<h1>MAIF Déclaration indemnités kilométriques</h1>
-		<h1>
-			Transformez vos trajets vélo domicile/lieu de travail en indemnités
-		</h1>
-		<h2>
-			<p>
-				Vous verdissez vos trajets vélo domicile/lieu et votre employeur vous indemnise
-			</p>
-		</h2>
-	</div>
-	<div class="corps2">
-		<img class="background-image"
-        src="https://cdn.pixabay.com/photo/2018/05/02/05/16/bicycle-3367760__340.jpg"
-      />
-      <div  class="textover-image"
-         <h1> Saisir mes trajets</h1>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+	   <!-- la feuille de style bootstrap -->
+      <link rel="stylesheet"
+       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+       crossorigin="anonymous"
+       rel="stylesheet"
+       type="text/css"/> 
+      <!-- ma feuille de style --> 
+    	<link rel="stylesheet"
+      href="style.css"/>
+		<script>
+			function imprimer() {
+		    window.print();
+		}
+		
+		</script>
+  </head>
+  <body>
+    <!-- menu entête de type navbar bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	   <!-- image et nom du site -->
+    	<img src="https://picsum.photos/40/40" width="40" height="40" alt="">
+      <a class="navbar-brand" href="#">Indemnités kms MAIF</a>	   
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+	   <!-- menu -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Saisir mes trajets <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mon récapitulatif</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mes infos perso</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Gestion du site
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Gérer les utilisateurs</a>
+              <a class="dropdown-item" href="#">Gérer ....</a>
+              <a class="dropdown-item" href="#">Gérer ....</a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <img class="background-image"
-        src="https://cdn.pixabay.com/photo/2018/05/02/05/16/bicycle-3367762__340.jpg"
-      />
-	    <div class="textover-image"
-        <h1>Mon récaptulatif</h1>
+      <!-- bouton s'inscrire -->
+	    <form class="form-inline">
+		    <button class="btn btn-outline-success" type="button">S'inscrire</button>
+		  </form>
+    </nav>
+    
+    <div class="container-fluid">
+     <!-- ligne avec image en arriere plan et texte -->
+      <div class="row">
+        <div class="colcorps d-print-none">
+		      <p> Transformez vos trajets vélo domicile/lieu de travail en indemnités ! </p>
+          <p>
+            Vous verdissez vos trajets domicile/lieu en utilisant votre vélo et votre employeur vous indemnise
+          </p>
+          <p><a onclick='imprimer()'>imprimer</a>
+          </p>
+          <input class="inscription" type="button" value="S'inscrire" />
+		    </div>
+      </div>
+	  	<!-- ligne avec 3 images et liens sur les fonctionnalités -->
+	   	<div class="row">
+			  <div class="col">
+          <p> </p>
+       <div>   
+      </div>
+    	<!-- ligne avec 3 images et liens sur les fonctionnalités -->
+      <div class="row">
+        <div class="col nav-selector" id="journey-input">          
+		      <img src="https://picsum.photos/100/100" width="100" height="100" alt="">
+          <div>
+            <h3>Saisir mes trajets</h3>
+            <p>Enregistrer</p>
+          </div>
+        </div>
+        <div class="col nav-selector">
+					<img src="https://picsum.photos/100/100" width="100" height="100" alt="">
+          <div>
+            <h3>Mon récapitulatif</h3>
+            <p>Trajets/Indemnités</p>
+          </div>
+        </div>
+        <div class="col nav-selector">
+          <img src="https://picsum.photos/100/100" width="100" height="100" alt="">
+          <div>
+            <h3>Administrer</h3>
+            <p>Gestion du site</p>
+          </div>
+        </div>
       </div>
     </div>
+    <!--
+    <div id="bigSummary" class="container">
+      <img
+        src="https://cdn.pixabay.com/photo/2014/12/04/19/45/bicycle-557046_1280.jpg"
+        width="80%"
+      />
+      <div class="text-block">
+        Transformez vos trajets vélo domicile/lieu de travail en indemnités !
+        <p>
+          Vous verdissez vos trajets domicile/lieu en utilisant votre vélo et
+          votre employeur vous indemnise
+        </p>
+        <input class="bouton inscription" type="button" value="S'inscrire" />
+      </div>
+    -->
+    </div>
+
+    
+	<div class="container-fluid">
+    <footer class="row">
+        <div class="col-md-4 d-none d-md-block">
+          <ul class="yuyu">
+            <li><a href="">rererfddddsdsds fffffffffffffff fffffffffffffff ffffffffe</a></li>
+            <li class="d-none d-sm-block">lien2</li>
+            <li>lien3</li>
+          </ul>
+        </div>
+				<div class="col-md-4">
+          <ul>
+            <li>lien1</li>
+            <li>lien2</li>
+            <li>lien3</li>
+          </ul>
+				</div>
+						<div class="col-md-4">
+				<ul>
+					<li>lien1</li>
+					<li>lien2</li>
+					<li>lien3</li>
+				</ul>
+						</div>
+    </footer>
+    fdggdfgdfgdfgdfg
+	</div>
+    <!--
+      Opt
+      ional JavaScript
+    -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

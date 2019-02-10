@@ -1,43 +1,96 @@
 header {
 }
 
+@font-face {
+  font-family: "Frijole";
+  src: url("https://fonts.gstatic.com/s/frijole/v7/uU9PCBUR8oakM2BQ3xTR3w.woff2");
+}
+
 body {
+  /*
   width: 100%;
   margin: 0px;
   /* background-size: auto 100px;*/
+  /*
   background-color: rgb(52, 152, 219);
-  font-family: Arial, Helvetica, sans-serif;
+  */
+}
+.zencolor {
+  color: blue;
+}
+@media screen and (max-width: 640px) {
+  .zencolor {
+    color: red;
+    display: none;
+  }
 }
 
-.corps1 {
-  /* image de fond auto size */
-  background-image: url(https://cdn.pixabay.com/photo/2015/01/24/01/58/bicycle-609652__340.jpg);
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-color: rgb(34, 235, 16);
-  color: rgb(255, 255, 255);
-}
-.corps1 h1 {
-  font-size: 125%;
-}
-.corps1 h2 {
-  font-size: 75%;
+@media print {
+  footer {
+    page-break-after: always;
+  }
 }
 
-.corps2 {
-  background-color: rgb(255, 255, 255);
-  display: flex;
+ul.yuyu {
+  list-style: none;
 }
-.corps2 h1 {
-  font-size: 100%;
+.navbar-brand {
+  font-family: Frijole, sans-serif;
 }
-.corps2 img {
-  width: 15%;
-  height: 15%;
+
+.footlink {
+  display: block;
 }
-.background-image {
-  position: relative;
+.colcorps {
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/27/11/52/mountain-bike-2447170__340.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  padding-left: 50%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
 }
-.textover-image {
+/* input bouton de type inscription */
+/*input[type=button].inscription{
+  margin-bottom: 5%; 
+}*/
+
+.text-block {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-selector {
+  text-align: center;
+}
+.nav-selector img,
+.nav-selector div {
+  border: solid 3px lightblue;
+}
+.nav-selector img {
+  border-radius: 100%;
+}
+.nav-selector div {
+  padding: 1em 0.5em 0.5em;
+  margin-top: -1em;
+}
+.nav-selector div h3 {
+  font-weight: bold;
+  font-size: 1em;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+.nav-selector div p {
+  color: grey;
+  padding: 0;
+  margin: 0;
 }
